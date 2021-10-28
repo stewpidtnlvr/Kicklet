@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Kicklet | Login</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="imgs/logo.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="header">
+
+		<span onclick="openNav()" style="font-size:40px;cursor:pointer">&#9776;</span>
+      <div class="header-right">
+        <a href="/cart" class="links" style="font-size:35px; color:#000;">🛒</a>
+      </div>
+          <center><img src="imgs/logo.png" style="margin: 0;" alt="Logo.png" class="logo_img" onclick="window.location.replace('/');"></center>  
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="/">Home</a>
+      <a href="/list">List A Shoe</a>
+      <a href="/market">Shop</a>
+      <a href="/login">Login</a>
+      <a href="/about">About</a>
+    </div>
+    <script src="script.js"></script>
+    <br><br><br><br>
+<center>
+  <br><br><br>
+<div class="login_form">
+<br>
+    <form
+  action="/"
+  method="POST"
+>
+<center>
+  <h3>Login</h3>
+</center>
+<!--<br>--><center>
+  <label>
+    <center>
+    Email:
+    </center>
+    <input type="email" name="Recorded Promo Email:">
+  </label>
+  </center>
+  <br>
+  <center>
+  <label>
+    <center>
+    Password:
+    </center>
+    <input type="password" name="Password">
+  </label></center>
+  <p>by typing your email, you agree to the <a href="/legal/ToS.html">terms of service</a>
+  <br>
+  <input type="checkbox" id="sendemails" name="sendemails" value="true">
+<label for="sendemails">I wish to receive occasional emails regarding updates to the platform and sales</label>
+  </p>
+  
+  <!-- your other form fields go here -->
+  <br><br>
+  <button type="submit">Login</button>
+</form>
+</div>
+</center>
+<br><br><br><br><br>
+<div class="footer">
+  <center>
+    <p class="footer_text">
+      KickletⒸ copyright 2021-2022
+    </p>
+  <a href="/login" class="footer_link">Login</a>
+  <a href="/market" class="footer_link">Shop</a>
+
+  </center>
+</div>
+  </body>
+</html>

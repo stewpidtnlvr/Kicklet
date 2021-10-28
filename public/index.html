@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Kicklet | Home</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="imgs/logo.webp">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+	<script>
+		window.onload = function () {
+    var x = 0;
+    while (x < 10000) x++;
+    }
+
+	</script>
+	<div class="header">
+		<!--Menu Button-->
+		<span onclick="openNav()" style="font-size:40px;cursor:pointer">&#9776;</span>
+      <div class="header-right">
+        <!--Shopping Cart Logo-->
+        <a href="/cart" class="links" style="font-size:35px; color:#000;">🛒</a>
+      </div>
+      <!--Website Logo that redirects to index.html-->
+        <center><img src="imgs/logo.webp" style="margin: 0;" alt="Logo.png" class="logo_img" onclick="window.location.replace('/');"></center>
+  </div>
+      <br><br><br><br><br>
+      <!--Side Navigation Options-->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/">Home</a>
+        <a href="/list">List A Shoe</a>
+        <a href="/market">Shop</a>
+        <a href="/about">About</a>
+        <a href="/login">Login</a>
+      </div>
+      <script src="script.js"></script>
+      <img id="starz" src="imgs/starz.png">
+      <!--Start Of the Actual Page-->
+    <center>
+      <h1 class="pop">
+        The Best Place To Rent Shoes On The Internet!
+      </h1>
+    <center>
+      <br><br><br>
+      <!--"Shop The Collection + Button that redirects to marketplace.html"-->
+      <div class="box">
+        <br>
+        <h2>
+          Shop The Collection Now!
+        </h2>
+        <br><br>
+        <a href="/market">Shop Now</a>
+      </div>
+    </center>
+    <br><br><br><br><br>
+    <center>
+      <!--Info About How Kicklet works-->
+      <h1 class="pop">
+        How It Works:
+    </h1>
+    <div class="split left">
+  <div class="centered">
+    <img src="imgs/2.png" alt="2" class="number_size">
+    <h2>Step 2:</h2>
+    <p>Select "Order Now" and put your shipping info in. It's that simple!</p>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <img src="imgs/1.png" alt="1" class="number_size">
+    <h2>Step 1:</h2>
+    <p>Select your shoe size and the shoe that you want.</p>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br>
+<div class="whyy">
+<h1 class="pop">
+  Why Choose Kicklet?
+</h1>
+<h2 class="smaller">
+  Kicklet has the best shoes available. There are plenty of options for plenty of occasions, and YOU choose how long you keep them! As well as new shoes are added every week! So, what are you waiting for? <a href="market.html" class="link">Shop Now!</a>
+</h2></div>
+  </center>
+<!--<br><br><br>-->
+<div class="footer">
+  <center>
+    <p class="footer_text">
+      KickletⒸ copyright 2021-2022
+    </p>
+  <a href="/login" class="footer_link">Login</a>
+  <a href="/market" class="footer_link">Shop</a><br>
+  <p style="color: black; font-family: monospace;">Made by: S A F E ⠀P L A C E Ⓒ⠀Programming Group</p>
+
+  </center>
+</div>
+ <script type="module">
+    // This is the "Offline copy of pages" service worker
+
+// Add this below content to your HTML page inside a <script type="module"> tag, or add the js file to your page at the very top to register service worker
+// If you get an error about not being able to import, double check that you have type="module" on your <script /> tag
+
+/*
+ This code uses the pwa-update web component https://github.com/pwa-builder/pwa-update to register your service worker,
+ tell the user when there is an update available and let the user know when your PWA is ready to use offline.
+*/
+
+import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+const el = document.createElement('pwa-update');
+document.body.appendChild(el);
+
+  </script>
+  </body>
+</html>
